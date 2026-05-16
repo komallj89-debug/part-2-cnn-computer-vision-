@@ -4,7 +4,7 @@ This repository contains an end-to-end Computer Vision project using a Convoluti
 
 ---
 
-## 📂 Repository Layout Structure
+##  Repository Layout Structure
 * **`README.md`**: This document containing comprehensive project descriptions and concept answers.
 * **`notebook.ipynb`**: The interactive Jupyter/Google Colab notebook executing the code pipeline.
 * **`requirements.txt`**: Plain text file listing all necessary library versions for runtime environment replication.
@@ -14,7 +14,7 @@ This repository contains an end-to-end Computer Vision project using a Convoluti
 
 ---
 
-## 🧠 Task 1: Problem Identification
+##  Task 1: Problem Identification
 * **Problem Type Selected:** Image Classification.
 * **Core Objective:** The dataset requires taking a whole input image and matching it to a single categorical label.
 * **Why Object Detection is incorrect:** The task does not require tracing specific location boxes (`bounding boxes`) around separate components inside the photo.
@@ -23,7 +23,7 @@ This repository contains an end-to-end Computer Vision project using a Convoluti
 
 ---
 
-## 📊 Task 2 & 3: Dataset Exploration & Preprocessing
+##  Task 2 & 3: Dataset Exploration & Preprocessing
 * **Total Image Count:** 480 total images extracted from the provided archive file.
 * **Training Partition Size:** 384 images (80%) used directly by the network to optimize weights.
 * **Testing/Validation Partition Size:** 96 images (20%) entirely withheld to evaluate out-of-sample performance.
@@ -37,7 +37,7 @@ This repository contains an end-to-end Computer Vision project using a Convoluti
 
 ---
 
-## 🏗️ Task 4 & 5: CNN Model Design and Evaluation
+##  Task 4 & 5: CNN Model Design and Evaluation
 * **Convolution Layers (`Conv2D`):** Scans 2D pixel layouts using mathematical filters to discover visual micro-features like lines and borders.
 * **Activation Functions (`ReLU`):** Drops negative intermediate math results to zero to give the network non-linear pattern learning capabilities.
 * **Pooling Layers (`MaxPooling2D`):** Slides downsampling matrices over feature maps, keeping only the maximum values to shrink data volume.
@@ -48,7 +48,7 @@ This repository contains an end-to-end Computer Vision project using a Convoluti
 
 ---
 
-## 💡 Task 6: CNN Core Theoretical Explanations
+##  Task 6: CNN Core Theoretical Explanations
 * **What is Convolution?**
   * It is a scanning operation where a small grid of numbers (called a filter or kernel) moves pixel-by-pixel across an image.
   * At each step, it multiplies its numbers by the pixel values it covers to create a feature map.
@@ -68,7 +68,7 @@ This repository contains an end-to-end Computer Vision project using a Convoluti
 
 ---
 
-## 🏢 Task 7: Business Use Case Mapping
+##  Task 7: Business Use Case Mapping
 * **Selected Domain:** Manufacturing & Industrial Automation.
 * **The Operational Problem:** Traditional visual quality control on assembly lines relies on human inspectors, which introduces issues with fatigue, high labor costs, and varied accuracy across long shifts.
 * **The CNN Solution:** Automated camera structures record components on active conveyor tracks, passing them straight to this trained CNN classification model to automatically flag items as `Normal` or `Defective`.
